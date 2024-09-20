@@ -112,11 +112,23 @@ help:
 	@$(ECHO) "# setup       - install required packages {$(PACKAGES)}"
 
 #------------------------------------------------------------------------------
+# apt-get requires sudo privs
+#
+.PHONY: getsudo
+getsudo:
+	@$(ECHO) ">> $(INSTALL) $(PACKAGES)"
+	@$(ECHO) "   ...requires sudo"
+	@$(SUDO) -k    # Force re-entry of (sudo) password [for security]
+	@$(SUDO) true
+
 .PHONY: setup
-setup:
+setup: getsudo
 	$(UPDATE)
 	@$(ECHO) "-----------------------------"
 	$(INSTALL) $(PACKAGES)
+	git clone https://github.com/csBlueChip/BuildTools.git overf1ow ;\
+		overf1ow/input_parser
+	$(SUDO) -k  # drop sudo privs [for security]
 
 #------------------------------------------------------------------------------
 .PHONY: clean
