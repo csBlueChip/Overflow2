@@ -253,7 +253,7 @@ Useful skills to have before you start are:
 # Willingness to work as a team
 	If you're truly L33t, then by all means work alone. Otherwise, remember:
 	"If one person has the courage to ask a question, you can bet ten people
-	want to hear the answer!" ...Your learn more, and remember more if you
+	want to hear the answer!" ...You learn more, and remember more if you
 	share your ideas with others, who are also sharing their ideas with you!
 	[prove me wrong]
 
@@ -421,7 +421,7 @@ and will continue to be so for MANY years to come!
 | |                                                                         | |
 | `-------------------------------------------------------------------------' |
 `-_                        ,----------------------.                         _-'
-   `.                     |(x)    The Rulez   (+)|                        .' 
+   `.                      |(x)    The Rulez   (+)|                       .' 
     |                      `----------------------'                       |
     `---------------------------------------------------------------------'
 
@@ -496,7 +496,7 @@ A comprehensive walkthrough of the entire CTF has been written:
 	  6549 total
 
 ...complete with a library of handy functions, and an autopwn script which can
-summon 17 of the 18{*1] challenges in ~21s[*2] ...The last challenge cannot be
+summon 17 of the 18[*1] challenges in ~21s[*2] ...The last challenge cannot be
 timed, you will understand why when you see it.
 
 So you can be sure the whole process is proven, and the results are repeatable.
